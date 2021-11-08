@@ -1,7 +1,8 @@
 export const environment = {
-  production: true
+  production: true,
+  serverUrl: 'http://localhost:8084',
+  serverApi: 'http://localhost:8084/api/v1'
 };
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
