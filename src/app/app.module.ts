@@ -20,7 +20,6 @@ import { MatSortModule } from '@angular/material/sort';
 
 import { HeaderComponent } from './components/template/header/header.component';
 import { NavComponent } from './components/template/nav/nav.component';
-import { FooterComponent } from './components/template/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -42,7 +41,6 @@ import { FooterComponent } from './components/template/footer/footer.component';
     MatSortModule,
     HeaderComponent,
     NavComponent,
-    FooterComponent,
   ],
   declarations: [
     AppComponent
@@ -50,6 +48,21 @@ import { FooterComponent } from './components/template/footer/footer.component';
   providers: [],
   bootstrap: [
     AppComponent
+  ],
+  exports: [
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    HeaderComponent,
+    NavComponent,
   ]
 })
 export class AppModule { }
